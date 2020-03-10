@@ -23,7 +23,7 @@ chown cron opkg-upgrade.sh
 ```
 4. For example cron usage
 
-We assume you config to run At 05:00 A.M. on every Monday. You paste bellow code before **crontab -e** For more visit [crontab.guru](https://crontab.guru)
+We assume you config to run At 05:00 A.M. on every Monday. You paste bellow code after run **crontab -e** command. For more visit [crontab.guru](https://crontab.guru)
 
 ```
 5 * * * 1 opkg-upgrade.sh
