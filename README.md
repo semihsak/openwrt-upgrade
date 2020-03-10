@@ -6,7 +6,7 @@ This script is Openwrt Upgrade and patches for applications. Installation of pre
 
 ## Usage
 
-1. Download package-update.sh on your openwrt system. 
+1. Download opkg-update.sh on your openwrt system. 
 
 ```
 wget 'https://raw.githubusercontent.com/semihsak/openwrt-upgrade/master/opkg-upgrade.sh' -O "opkg-upgrade.sh"
@@ -15,18 +15,18 @@ wget 'https://raw.githubusercontent.com/semihsak/openwrt-upgrade/master/opkg-upg
 2. You must change executable permission your own user for manual usage.
 
 ```
-chmod 700 /file_directory.sh
+chmod 700 opkg-upgrade.sh
 ```
 3. Or recommend usage by cron. You get permission to run file for cron.
 ```
-chown cron /file_directory.sh
+chown cron opkg-upgrade.sh
 ```
 4. For example cron usage
 
 We assume you config to run At 05:00 A.M. on every Monday. You paste bellow code before **crontab -e** For more visit [crontab.guru](https://crontab.guru)
 
 ```
-5 * * * 1 /file_directory.sh
+5 * * * 1 opkg-upgrade.sh
 ```
 
 ## License
