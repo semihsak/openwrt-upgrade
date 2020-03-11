@@ -20,8 +20,8 @@ do
         done
         exit $SUCCESS
     fi
-        echo "No upgradable packages"
+        logger -s "No upgradable packages"
         exit $NO
 done
 
-echo "Check your network settings or internet connectivity"
+logger -s "Check your network settings or internet connectivity"
