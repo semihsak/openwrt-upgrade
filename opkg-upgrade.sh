@@ -6,7 +6,7 @@ logger -s "Update package list"
 opkg update
 while [ $? -eq 0 ]
 do
-    if ($(opkg list-upgradable | wc -l) != 0)
+    if ( echo $(opkg list-upgradable | wc -l) != 0)
     then
         logger -s "Upgrade is starting"
         name=$(opkg list-upgradable | cut -d' ' -f1)
